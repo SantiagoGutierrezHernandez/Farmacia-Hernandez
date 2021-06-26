@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+@mixin text-button($font-size, $padding, $line-height, $fixed : false) {
+    $height: $font-size + $line-height + $padding * 2;
+    border-radius: (math.div($height, 2))+rem;
+    
+    @if $fixed{
+        height: $height;
+    }
+}
+
+@mixin transform($property){
+    transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    -moz-transform: $property;
+    -webkit-transform: $property;
+}

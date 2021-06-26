@@ -1,0 +1,63 @@
+/*Establecer un tamaño de fuente predeterminado*/
+html{
+    font-size: 62.5%;
+    color:black;
+}
+/*Establecer un fondo y una fuente predeterminada para el html*/
+/*TO DO: Agregar un efecto parallax*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/fondo-placeholder.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Hacer que al entrar a la página el fondo del título cambie gradualmente y poner altura minima*/
+header{
+    transition: background-color 1s;
+    height: 100vh;
+}
+/*Evitar que el título sea más grande que el contenedor*/
+header .row{
+    max-width: 100%;
+}
+/*Agregar sombras a los elementos*/
+iframe, .medium-image, .table-icon, .title-image, .subtitle, .content-box, .nav-box, ul li ul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+/*Limitar tamaño de los iframe*/
+iframe{
+    max-width: 80%;
+    max-height: 80vh;
+}
+/*Reemplazar la enumeración de las listas*/
+ul{
+    margin:0;
+    padding: 0;
+    li{
+        list-style-type: disc;
+        color: black;  
+    }
+}
+/*Estilizar links y eliminar el subrayado*/
+a{
+    font-weight: bold;
+    text-decoration-line: none;
+    width: fit-content;
+}
+/*Separar elementos de lista del footer y quitarles el disco*/
+footer ul li{
+    margin: 1rem;
+    list-style-type: none;
+}
+/*Desplegar dropdown al hacerle hover*/
+ul{ 
+    li:hover{
+        ul{
+            display: block;
+        }
+    } 
+}
+//Tamaño de fuente para textos
+p, a, li{
+    font-size: 1.6rem;
+}

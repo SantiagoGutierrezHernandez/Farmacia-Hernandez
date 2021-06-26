@@ -1,0 +1,18 @@
+//Eliminar la barra en dispositivos en los que podria obstruir gran parte de la pantalla
+@media only screen and (max-width: 250px) {
+    .nav-box{
+        display: none !important;
+    }
+}
+//Evitar que el header quede más pequeño que el título
+@media only screen and (max-width: 500px){
+    header{
+        min-height: max-content; 
+    }
+}
+//Evitar que el título desborde verticalmente
+@media only screen and (max-height:200px){
+    header{
+        height: 100% !important;
+    }
+}

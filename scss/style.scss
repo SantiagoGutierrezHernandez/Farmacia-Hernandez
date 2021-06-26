@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=====================SECCION DE ETIQUETAS=========================*/
+@import 'base/tags';
+/*=====================SECCION DE CLASES============================*/
+@import 'base/classes';
+/*=====================SECCION DE ANIMACIONES=======================*/
+@import 'animaciones/animations';
+
+.animation-logo{
+    &:hover, &:focus{
+        animation: infinite 1s logo-rotate linear;
+    }
+}
+
+/*=====================MEDIA QUERIES================================*/
+@import 'base/responsive';

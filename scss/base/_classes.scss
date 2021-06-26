@@ -1,0 +1,200 @@
+@use 'sass:math';
+@import '../variables/colores';
+@import '../variables/mixins';
+
+/*Estilizar la barra de navegación*/
+.nav-box{
+
+    z-index: 10; //Asegurarse que se muestre siempre encima incluso de elementos animados
+    transition: 0.25s transform ease-in-out, border 0.25s ease-in-out;
+    border-bottom: 1px solid white;
+
+    .nav-item{
+        transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+
+        width: 100%;
+        padding: 1rem;
+        position: relative;
+
+        .nav-text{
+            font-size: 1.6rem;
+            font-family: 'Playfair Display', serif;
+            margin: 0 auto;
+            color: $nav-unselected;
+            transition: color 0.25s ease-in-out;
+        }
+
+        .nav-border-bottom{
+            background-color: $nav-unselected;
+            transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+            position:absolute;
+            width: 100%;
+            height: 0.5rem;
+            bottom: 0%;
+            transform: scaleX(0);
+        }
+
+//Indicar visualmente que se puede interactuar con el link por accesibilidad y estilo
+        &:hover, &:focus{
+            .nav-text{
+                color: $nav-selected;
+            }
+
+            .nav-border-bottom{
+                background-color: $nav-selected;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+/*Cambiar el color de parrafos largos*/
+.description{
+    text-align: justify;
+    font-size: 1.6rem;
+}
+/*Establecer tamaños y margenes de imágenes*/
+.social-logo{
+    width: (math.div(80, 16))+rem;
+}
+/*Alinear y separar íconos con su texto*/
+.icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        margin-right: 1rem;
+    }
+}
+
+//Establecer anchos de las secciones
+.title-box{
+    width: 100%;
+    min-width: 260px;
+}
+.content-box{
+    padding: (math.div(60, 16))+rem;
+    margin: 0 0 0 0;
+    width: calc(100vw - calc(100vw - 100%));
+    min-width: 260px;
+    overflow: hidden;
+
+}
+//Valores de los títulos y subtitulos
+.title{
+    margin: 1.5em;
+    font-size: 4rem;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    color: map-get($paleta-txt , claro);
+}
+.subtitle{
+    padding: 1rem 2rem;
+    margin: 2rem;    
+    font-size: 3rem;
+    overflow-wrap: break-word;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    place-self: center;
+    text-align: center;
+}
+/*Cambiar valores de las cards*/
+.card-section{
+    padding: 1rem;
+    border: rgb(20, 20, 20) solid 1px;
+    border-radius: 5px;
+    
+    .row{
+        .card{
+            margin: 0.3rem;
+            border: 2px solid rgb(20, 20, 20, 0.5);
+            transition: transform 0.3s;
+
+            &:hover{
+                transform: scale(1.05);
+                z-index: 1;
+            }
+        } 
+    }
+}
+.card-item{
+    border: 1px solid rgba(20, 20, 20, 0.5) !important;
+    border-radius: 5px;
+}
+/*Colores de texto*/
+.c-light{
+    color: map-get($paleta-txt, claro);
+}
+.c-medium{
+    color: map-get($paleta-txt, medio);
+}
+.c-dark{
+    color: map-get($paleta-txt, oscuro);
+}
+/*Fondos sin gradiente*/
+.light-background{
+    background-color: map-get($paleta-bg, claro);
+}
+.medium-background{
+    background-color: map-get($paleta-bg, medio);
+}
+.dark-background{
+    background-color: map-get($paleta-bg, oscuro);
+}
+.alpha-background{
+    background-color: map-get($paleta-bg, claro-a);
+}
+.alpha-dark-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.black-background{
+    background-color: black;
+}
+/*Fondos con gradiente*/
+.background-gradient{
+    background-image: linear-gradient(to bottom, map-get($paleta-bg, claro), map-get($paleta-bg, claro-a));
+}
+.gradient-dark{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.5));
+
+}
+/*Hacer el cambio de fondo en hover una trancisión*/
+.color-hoverable{
+    transition: 0.2s background-color;
+}
+/*Estilizar links*/
+.link{
+    color: black;
+    width: fit-content;
+}
+/*Hacer que el elemento parezca un botón*/
+.button-light{
+    background-color: map-get($paleta-bg, claro);
+    transition: 0.2s background-color;
+
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+
+    @include text-button(1.6, 1, 1.5, false);
+
+    &:hover, &:focus{
+        background-color: lighten(map-get($paleta-bg, claro), 10%);
+    }
+}
+.button-dark{
+    background-color: map-get($paleta-bg, oscuro);
+    border-radius: 1.5rem;
+    transition: 0.2s background-color;
+
+    &:hover, &:focus{
+        background-color: darken(map-get($paleta-bg, oscuro), 10%);
+    }
+}
+//Evitar que elementos de fila se excedan del contenedor
+.row{
+    max-width: 100%;
+}
