@@ -1,0 +1,21 @@
+=====15/6/21=====
+-Agregadas Keywords a los html.
+-Agregadas descripciones a los html.
+-Cambios en los títulos para que contengan entre 35 y 65 caracteres.
+-Cambios en la jerarquía de encabezados para que sea más ordenada.
+=====18/6/21=====
+-Cambios en la barra de navegación para que sea más consistente en la mayoría de plataformas
+-Aumentado el contraste de la barra de navegación
+-Arregladas descripciones alternativas de imágenes para que sean más descriptivas
+-Agregados detalles visuales al seleccionar elementos con la tecla Tab por accesibilidad
+-Agregados títulos a los iframes por accesibilidad
+-Asignada la propiedad "loading:lazy" a imágenes que no se vean en la portada para optimizar la velocidad de carga
+-Aumentada la maxima escala de los html a 5.0 para que sea más accesible para personas con visión reducida
+-Agregado título open graph
+-Agregada descripción open graph
+-Agregado autor open graph
+-Agregado un icono open graph
+=====25/6/21=====
+-Creado un repositorio para la página en GitHub
+-Agregado archivo .gitignore
+-Cambiado el changelog a .txt para que sea visualizable desde VS Code
