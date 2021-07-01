@@ -19,3 +19,5 @@
 -Creado un repositorio para la página en GitHub
 -Agregado archivo .gitignore
 -Cambiado el changelog a .txt para que sea visualizable desde VS Code
+=====1/7/21=====
+-Cambiado el nombre de algunas imagenes por incompatibilidad con hostings
