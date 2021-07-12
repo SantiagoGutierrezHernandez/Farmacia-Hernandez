@@ -171,6 +171,7 @@ p, a, li {
   padding: 1rem;
   border: #141414 solid 1px;
   border-radius: 5px;
+  margin: 2.5%;
 }
 .card-section .row .card {
   margin: 0.3rem;
@@ -181,7 +182,12 @@ p, a, li {
   transform: scale(1.05);
   z-index: 1;
 }
-
+.card{
+  border-radius: .25rem;
+  margin: 0 auto !important;
+  min-width: 33%;
+  max-width: 90%;
+}
 .card-item {
   border: 1px solid rgba(20, 20, 20, 0.5) !important;
   border-radius: 5px;
@@ -269,7 +275,10 @@ p, a, li {
 }
 
 .row {
+  /*Evitar que elementos se salgan del body*/
   max-width: 100%;
+  /*Quitarle los margenes (Se manejaran según los elementos para evitar desplazamientos)*/
+  margin: 0;
 }
 
 /*=====================SECCION DE ANIMACIONES=======================*/
