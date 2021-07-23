@@ -34,8 +34,13 @@
 </head>
 
 <body>
+    <!--Titulo-->
+    <header class="black-background title-box position-relative">
+        <h1 class="w-100 title m-0 position-absolute top-center">Farmacia Hernandez</h1>
+    </header>
     <!-- Barra de navegación-->
     <nav class="nav-box d-none d-sm-flex black-background sticky-top flex-row align-items-center justify-content-between">
+        <img class="nav-item" style="height: 45px; width: auto; padding: 0;" src="../images/brand.png" alt="">
         <a href="../index.html" class="nav-item text-center d-flex justify-content-center">
             <span class="nav-text">Home</span>
             <div class="nav-border-bottom"></div>
@@ -49,17 +54,33 @@
             <div class="nav-border-bottom"></div>
         </a>
     </nav>
-    <!--Título e ícono-->
-    <header id="inicio" class="title-box d-flex container-fluid align-items-center justify-content-around flex-column flex-sm-row gradient-dark">
-        <h1 class="title">
-            Farmacia Hernandez
-        </h1>
-    </header>
+    <!--Banner decorativo de la pagina-->
+    <main id="inicio" class="gradient-dark p-0 min-w">
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/1.png" class="d-block w-100" alt="Imagen de fondo 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/2.png" class="d-block w-100" alt="Imagen de fondo 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/3.png" class="d-block w-100" alt="Imagen de fondo 3">
+              </div>
+            </div>
+            <div class="h-100 w-100 position-absolute gradient-dark top-left"></div>
+        </div>
+    </main>
 
     <!-- Mostrar cartas con productos y sus descripciones-->
-    <main id="productos" class="content-box light-background flex-table">
+    <section id="productos" class="content-box light-background flex-table">
         <div class="row justify-content-center">        
-            <h2 class="subtitle medium-background">Lista de productos</h2>
+            <h2 class="subtitle dark-background">Lista de productos</h2>
         </div>
         <div class="card-section dark-background">
             <div class="row justify-content-center">
@@ -99,12 +120,12 @@
             </div>
         </div>
         <small>No todos los productos se encuntran en esta lista. Para averiguar sobre alguno que no se encuentre aquí o preguntar precios contáctanos.</small>
-    </main>
+    </section>
 
     <!-- Dejar las redes sociales y otros métodos de contacto -->
-    <footer id="contacto" class="content-box p-5 d-flex flex-column justify-content-center dark-background">
+    <footer id="contacto" class="content-box p-5 d-flex flex-column justify-content-center medium-background">
         <div class="row justify-content-center">
-            <h3 class="subtitle medium-background c-dark">Contáctanos</h3>
+            <h3 class="subtitle dark-background">Contáctanos</h3>
         </div>
         <ul class="d-flex flex-column align-items-center justify-content-center">
             <li class="d-flex flex-wrap justify-content-evenly">

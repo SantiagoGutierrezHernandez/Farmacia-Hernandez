@@ -23,7 +23,7 @@ body {
 /*Hacer que al entrar a la página el fondo del título cambie gradualmente y poner altura minima*/
 header {
   transition: background-color 1s;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 /*Evitar que el título sea más grande que el contenedor*/
@@ -135,18 +135,18 @@ p, a, li {
 .title-box {
   width: 100%;
   min-width: 260px;
+  min-height: 30vh;
 }
 
 .content-box {
   padding: 3.75rem;
-  margin: 0 0 0 0;
-  width: calc(100vw - calc(100vw - 100%));
+  margin: 0;
+  width: 100%;
   min-width: 260px;
   overflow: hidden;
 }
 
 .title {
-  margin: 1.5em;
   font-size: 4rem;
   overflow-wrap: break-word;
   text-align: center;
@@ -164,6 +164,7 @@ p, a, li {
   font-weight: bold;
   place-self: center;
   text-align: center;
+  color: white;
 }
 
 /*Cambiar valores de las cards*/
@@ -208,19 +209,19 @@ p, a, li {
 
 /*Fondos sin gradiente*/
 .light-background {
-  background-color: #C3F1A7;
+  background-color: #ececec;
 }
 
 .medium-background {
-  background-color: #83C4AE;
+  background-color: #c69d81;
 }
 
 .dark-background {
-  background-color: #569F92;
+  background-color: #553528;
 }
 
 .alpha-background {
-  background-color: #c3f1a780;
+  background-color: #ececec80;
 }
 
 .alpha-dark-bg {
@@ -233,7 +234,7 @@ p, a, li {
 
 /*Fondos con gradiente*/
 .background-gradient {
-  background-image: linear-gradient(to bottom, #C3F1A7, #c3f1a780);
+  background-image: linear-gradient(to bottom, #ececec, #ececec80);
 }
 
 .gradient-dark {
@@ -253,7 +254,7 @@ p, a, li {
 
 /*Hacer que el elemento parezca un botón*/
 .button-light {
-  background-color: #C3F1A7;
+  background-color: #ececec;
   transition: 0.2s background-color;
   font-size: 1.6rem;
   padding: 1rem;
@@ -266,7 +267,7 @@ p, a, li {
 }
 
 .button-dark {
-  background-color: #569F92;
+  background-color: #553528;
   border-radius: 1.5rem;
   transition: 0.2s background-color;
 }
@@ -280,7 +281,21 @@ p, a, li {
   /*Quitarle los margenes (Se manejaran según los elementos para evitar desplazamientos)*/
   margin: 0;
 }
-
+/*Helpers de position*/
+.top-left{
+  top:0%;
+  left: 0%;
+}
+.top-center{
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*Agregar ancho minimo a contenedores*/
+.min-w{
+  min-width: 260px;
+}
 /*=====================SECCION DE ANIMACIONES=======================*/
 @keyframes logo-rotate {
   0% {

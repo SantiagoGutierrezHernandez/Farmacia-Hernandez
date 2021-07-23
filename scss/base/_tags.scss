@@ -14,7 +14,6 @@ body{
 /*Hacer que al entrar a la página el fondo del título cambie gradualmente y poner altura minima*/
 header{
     transition: background-color 1s;
-    height: 100vh;
 }
 /*Evitar que el título sea más grande que el contenedor*/
 header .row{

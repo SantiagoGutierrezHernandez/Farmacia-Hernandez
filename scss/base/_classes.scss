@@ -75,14 +75,13 @@
 .content-box{
     padding: (math.div(60, 16))+rem;
     margin: 0 0 0 0;
-    width: calc(100vw - calc(100vw - 100%));
+    width: 100%;
     min-width: 260px;
     overflow: hidden;
 
 }
 //Valores de los títulos y subtitulos
 .title{
-    margin: 1.5em;
     font-size: 4rem;
     overflow-wrap: break-word;
     text-align: center;
@@ -99,6 +98,7 @@
     font-weight: bold;
     place-self: center;
     text-align: center;
+    color: map-get($paleta-txt , claro);
 }
 /*Cambiar valores de las cards*/
 .card-section{
@@ -206,4 +206,19 @@
     max-width: 100%;
     /*Quitarle los margenes (Se manejaran según los elementos para evitar desplazamientos)*/
     margin: 0;
+}
+/*Helpers de position*/
+.top-left{
+    top:0%;
+    left: 0%;
+}
+.top-center{
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*Agregar ancho minimo a contenedores*/
+.min-w{
+    min-width: 260px;
 }

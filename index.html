@@ -11,10 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Links de CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Icono-->
+    <link rel="shortcut icon" href="images/leaf.png" type="image/x-icon">
 
     <!--=====OPEN GRAPH=====-->
     <meta property="og:title" content="Home - Farmacia Hernandez">
-    <meta property="og:image" content="images/icono.jpg">
+    <meta property="og:image" content="images/icono.png">
     <meta property="og:author" content="Santiago Gutierrez">
     <meta property="og:description" content="Somos Farmacia Hernandez, una farmacia y cosmética en 
     la localidad de Burzaco. En esta página podés encontrar nuestros productos y contactos.">
@@ -34,8 +36,13 @@
 </head>
 
 <body>
+    <!--Titulo-->
+    <header class="black-background title-box position-relative">
+        <h1 class="w-100 title m-0 position-absolute top-center">Farmacia Hernandez</h1>
+    </header>
     <!-- Barra de navegación-->
     <nav class="nav-box d-none d-sm-flex black-background sticky-top flex-row align-items-center justify-content-between">
+        <img class="nav-item" style="height: 45px; width: auto; padding: 0;" src="images/brand.png" alt="">
         <a href="#inicio" class="nav-item text-center d-flex justify-content-center">
             <span class="nav-text">Home</span>
             <div class="nav-border-bottom"></div>
@@ -53,18 +60,33 @@
             <div class="nav-border-bottom"></div>
         </a>
     </nav>
-    <!-- Título e ícono de la página web light-background-->
-    <header id="inicio" class="title-box gradient-dark d-flex container-fluid align-items-center justify-content-around flex-row flex-wrap">
-        <div class="row justify-content-center">
-            <h1 class="title">Farmacia Hernandez</h1>
+    <!--Banner decorativo de la pagina-->
+    <main id="inicio" class="gradient-dark p-0 min-w">
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.png" class="d-block w-100" alt="Imagen de fondo 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.png" class="d-block w-100" alt="Imagen de fondo 2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.png" class="d-block w-100" alt="Imagen de fondo 3">
+              </div>
+            </div>
+            <div class="h-100 w-100 position-absolute gradient-dark top-left"></div>
         </div>
-    </header>
-    
+    </main>
 
     <!-- Introducir el negocio y explicar brevemente los servicios al usuario-->
-    <main id="sobre-nosotros" class="content-box light-background">
+    <section id="sobre-nosotros" class="content-box light-background">
         <div class="row justify-content-center">        
-            <h2 class="subtitle medium-background">Sobre nosotros</h2>
+            <h2 class="subtitle dark-background">Sobre nosotros</h2>
         </div>
         <div class="row flex-lg-nowrap align-items-center">
             <p class="description col-12">
@@ -73,12 +95,12 @@
                 Ullam quod adipisci perferendis tempore sapiente alias vero! Impedit optio ea recusandae saepe. Ex, facere asperiores. Voluptatem vel eaque, debitis magnam et nam, rem sint magni, possimus quae eum ex!
             </p>
         </div>
-    </main>
+    </section>
 
     <!--Dar un resumen de los tipos de productos que se venden, mostrar imágenes de algunos y dar un link con una lista de ellos-->
-    <section id="productos" class="content-box dark-background">
+    <section id="productos" class="content-box medium-background">
         <div class="row justify-content-center">
-            <h3 class="subtitle medium-background">Productos</h3>
+            <h3 class="subtitle dark-background">Productos</h3>
         </div>
         <div class="row flex-lg-nowrap align-items-center">
             <p class="description col-12 col-lg-7">
@@ -105,7 +127,7 @@
     <!-- Dejar las redes sociales y otros métodos de contacto -->
     <footer id="contacto" class="content-box p-5 d-flex flex-column justify-content-center light-background">
         <div class="row justify-content-center">
-            <h4 class="subtitle medium-background c-dark">Contáctanos</h4>
+            <h4 class="subtitle dark-background c-dark">Contáctanos</h4>
         </div>
         <ul class="d-flex flex-column align-items-center justify-content-center">
             <li class="d-flex flex-wrap justify-content-evenly">
