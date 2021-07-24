@@ -316,16 +316,25 @@ p, a, li {
 }
 
 /*=====================MEDIA QUERIES================================*/
+/*Eliminar la barra en dispositivos en los que podria obstruir gran parte de la pantalla*/
 @media only screen and (max-width: 250px) {
   .nav-box {
     display: none !important;
   }
 }
 @media only screen and (max-width: 500px) {
+  /*Evitar que el header quede más pequeño que el título*/
   header {
     min-height: max-content;
   }
 }
+@media only screen and (max-width: 768px) {
+/*Hacer el gradiente mas claro en dispositivos en los que se veria mas "apretado"*/
+  .gradient-dark{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.2));
+  }
+}
+/*Evitar que el título desborde verticalmente*/
 @media only screen and (max-height: 200px) {
   header {
     height: 100% !important;
