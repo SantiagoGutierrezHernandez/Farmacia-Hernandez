@@ -6,11 +6,10 @@
 .nav-box{
 
     z-index: 10; //Asegurarse que se muestre siempre encima incluso de elementos animados
-    transition: 0.25s transform ease-in-out, border 0.25s ease-in-out;
-    border-bottom: 1px solid white;
+    transition: 0.25s transform ease-in-out;
 
     .nav-item{
-        transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+        transition: background-color 0.25s ease-in-out;
 
         width: 100%;
         padding: 1rem;
@@ -164,7 +163,7 @@
     background-image: linear-gradient(to bottom, map-get($paleta-bg, claro), map-get($paleta-bg, claro-a));
 }
 .gradient-dark{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.5));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.2));
 
 }
 /*Hacer el cambio de fondo en hover una trancisión*/
