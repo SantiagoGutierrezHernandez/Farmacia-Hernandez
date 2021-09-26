@@ -11,13 +11,9 @@ html {
   color: black;
 }
 
-/*Establecer un fondo y una fuente predeterminada para el html*/
-/*TO DO: Agregar un efecto parallax*/
+/*Establecer una fuente predeterminada para el html*/
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(../images/fondo-placeholder.jpg);
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 /*Hacer que al entrar a la página el fondo del título cambie gradualmente y poner altura minima*/
@@ -73,6 +69,77 @@ p, a, li {
   font-size: 1.6rem;
 }
 
+form{
+  font-size: 1.6rem;
+}
+/*=====================SECCION DE IDs===============================*/
+#no-results{
+  color: white;
+  text-align: center;
+  display: none;
+}
+/*Estilo del botón de compra*/
+#cart-buy{
+  min-width: 15rem;
+  min-height: 7.5rem;
+  font-size: 2rem;
+}
+/*Sección del carrito*/
+#carrito{
+  overflow-x: scroll;
+}
+/*Tabla del carrito*/
+#cart-products{
+  background-color: #ececec;
+  width: max-content;
+  margin: 0 auto;
+}
+/*Estilo de la notificación*/
+#notification-popup{
+  box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 50%);
+  padding: 5rem;
+  position: fixed;
+  left: 50%; top: 50%;
+  min-width: 50vh; min-height: 30vh;
+  width: fit-content;
+  max-width: 80vh; max-height: 80vh;
+  background-color: gainsboro;
+  transform: translate(-50%, -50%);
+  border-radius: 5rem;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+}
+#notification-popup .notification-close{
+  position: relative;
+  background-color: gainsboro;
+  border: none;
+  left: 100%;
+  top: 10%;
+  font-size: 2rem;
+  font-weight: 900;
+  color: grey;
+  transition: color 0.3s linear;
+  transform: translate(-50%, -50%);
+}
+#notification-popup .notification-close:hover{
+  color: black;
+}
+#notification-popup .notification-text{
+  text-align: justify;
+}
+/*Estilo de la barra de páginas*/
+#page-index{
+  width: fit-content;
+  height: 3rem;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  background-color: #eee;
+  text-align: center;
+}
+#last-page{
+  font-size: 1.6rem;
+}
 /*=====================SECCION DE CLASES============================*/
 /*Estilizar la barra de navegación*/
 .nav-box {
@@ -108,7 +175,6 @@ p, a, li {
   background-color: white;
   transform: scaleX(1);
 }
-
 /*Cambiar el color de parrafos largos*/
 .description {
   text-align: justify;
@@ -183,7 +249,7 @@ p, a, li {
 }
 .card{
   border-radius: .25rem;
-  margin: 0 auto !important;
+  margin: 1rem auto !important;
   min-width: 33%;
   max-width: 90%;
 }
@@ -266,8 +332,12 @@ p, a, li {
 
 .button-dark {
   background-color: #553528;
-  border-radius: 1.5rem;
   transition: 0.2s background-color;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  border-radius: 2.55rem;
 }
 .button-dark:hover, .button-dark:focus {
   background-color: #447e74;
@@ -293,6 +363,57 @@ p, a, li {
 /*Agregar ancho minimo a contenedores*/
 .min-w{
   min-width: 260px;
+}
+/*Ajustar el tamaño de un elemento según su contenido*/
+.fit{
+  width: fit-content;
+  height: fit-content;
+}
+/*Sobreescribir tamaños de texto de forms*/
+.form-select, .form-control{
+  font-size: 1.6rem;
+}
+/*Estilo de la parte del carrito de las cards*/
+.card-to-cart{
+  margin-top: .5rem; margin-bottom: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-product-amount{
+  width: 5rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  background-color: #eee;
+  text-align: center;
+}
+.card-add-button{
+  background-color: green;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+}
+.card-add-button img{
+  height: 4rem;
+}
+/*Estilo de la cabecera del carrito */
+.cart-header{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  border-bottom: black 2px solid;
+  margin: 1rem 0 0 0;
+}
+/*Estilo de la barra de páginas*/
+.page-arrow{
+  margin: 0 0.5rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  border: none;
+  transition: color 0.3s;
+}
+.page-arrow:hover{
+  color: darkgrey;
 }
 /*=====================SECCION DE ANIMACIONES=======================*/
 @keyframes logo-rotate {

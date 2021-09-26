@@ -1,0 +1,20 @@
+{"products": [
+    {"id": 0, "name": "Midermus crema de ordeñe", "image": "midermus-crema-ord.jpg", "price": 700.00, "tags": ["Económico"], "desc": "Crema corporal Midermus para pieles agrietadas."},
+    {"id": 1, "name": "Tortulan leche desmaquillante", "image": "tortulan-leche-desmaquillante.jpg", "price": 450.00, "tags": ["Económico", "Cruelty Free"], "desc": "Para desmaquillar los ojos y el rostro."},
+    {"id": 2, "name": "Protector solar", "image": "protector-solar.jpg", "price": 200.00, "tags": ["Económico", "Preparado"], "desc": "Dispenser de protector solar preparado F60."},
+    {"id": 3, "name": "Agua Micelar Garnier", "image": "garnier-micelar.jpg", "price": 800.00, "tags": ["Económico"], "desc": "Agua micelar para desmaquillar, limpiar y nutrir el rostro."},
+    {"id": 4, "name": "Agua de Rosas", "image": "agua-rosas.jpg", "price": 350.00, "tags": ["Económico", "Preparado"], "desc": "Agua de rosas para ..."},
+    {"id": 5, "name": "Crema humectante", "image": "crema-humectante.jpg", "price": 400.00, "tags": ["Económico", "Preparado"], "desc": "Crema humectante para ..."},
+    {"id": 6, "name": "Crema de limpieza", "image": "crema-limpieza.jpg", "price": 650.00, "tags": ["Económico", "Preparado"], "desc": "Crema de limpieza para ..."},
+    {"id": 7, "name": "Leche de almendras EWE", "image": "ewe-almendras.jpg", "price": 800.00, "tags": ["Económico"], "desc": "Leche de almendras para desmaquillar, limpiar y nutrir el rostro."},
+    {"id": 8, "name": "Gel de limpieza", "image": "gel-limpieza.jpg", "price": 650.00, "tags": ["Económico", "Preparado"], "desc": "Gel de limpieza para ..."},
+    {"id": 9, "name": "Crema antiage con ácido hialurónico", "image": "crema-antiage-hialuronico.jpg", "price": 650.00, "tags": ["Económico", "Preparado"], "desc": "Producto para ..."},
+    {"id": 10, "name": "Crema contorno de ojos", "image": "crema-contorno-ojos.jpg", "price": 650.00, "tags": ["Económico", "Preparado"], "desc": "Producto para ..."},
+    {"id": 11, "name": "Crema nutritiva facial", "image": "crema-nut-facial.jpg", "price": 650.00, "tags": ["Económico", "Preparado"], "desc": "Producto para ..."},
+    {"id": 12, "name": "L'oréal Hidra Total", "image": "loreal-hidra-total.jpg", "price": 650.00, "tags": ["Económico"], "desc": "Producto para ..."},
+    {"id": 13, "name": "L'oréal Agua Micelar Bifasica", "image": "loreal-micelar-bifasica.jpg", "price": 650.00, "tags": ["Económico"], "desc": "Producto para ..."},
+    {"id": 14, "name": "Tortulan tónico refrescante", "image": "tortulan-tonico-refr.jpg", "price": 650.00, "tags": ["Económico"], "desc": "Producto para ..."}
+
+
+
+]}
